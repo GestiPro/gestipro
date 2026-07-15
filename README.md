@@ -1,158 +1,53 @@
 # GestiPro
 
-> **La gestion simple et efficace pour les professionnels**
+> **La plateforme open-source de gestion pour les professionnels**
 
-GestiPro est une solution SaaS française destinée aux artisans, indépendants et petites entreprises afin de simplifier leur gestion administrative quotidienne.
+![GestiPro Logo](docs/assets/logo.png)
 
-L'objectif est de proposer un outil moderne permettant de gérer facilement les devis, factures, clients, paiements et collaborations, tout en restant simple à utiliser.
+GestiPro est une solution open-source de gestion d'entreprise conçue pour les artisans, indépendants et petites structures.
 
----
+Contrairement aux solutions SaaS classiques, GestiPro est pensé pour être **installé, personnalisé et intégré directement à l'écosystème numérique de chaque entreprise**.
 
-# 🎯 Objectifs du projet
+Chaque entreprise dispose de son propre espace professionnel accessible depuis son domaine ou sous-domaine.
 
-GestiPro vise à :
+Exemple :
 
-* Réduire le temps passé sur les tâches administratives.
-* Centraliser les documents importants.
-* Faciliter les échanges entre professionnels, clients et comptables.
-* Proposer une solution adaptée aux besoins des petites structures.
-* Respecter les normes françaises de facturation.
+```
+https://gestipro.stephaneauve.fr
+```
 
----
-
-# 👥 Types d'utilisateurs
-
-## 👑 Administrateur plateforme
-
-Gestionnaire de GestiPro.
-
-Permissions :
-
-* Gestion des entreprises clientes.
-* Gestion des abonnements.
-* Gestion du support.
-* Suivi des statistiques globales.
-* Maintenance de la plateforme.
+L'entreprise conserve ainsi son identité, ses données et son environnement de travail.
 
 ---
 
-## 🏢 Propriétaire d'entreprise
+# 🎯 Vision du projet
 
-Responsable du compte professionnel.
+L'objectif de GestiPro est de proposer une alternative simple, moderne et transparente aux logiciels de gestion propriétaires.
 
-Permissions :
+GestiPro permet aux professionnels de :
 
-* Gestion de l'entreprise.
-* Gestion des utilisateurs.
-* Création des devis.
-* Création des factures.
-* Gestion des clients.
-* Gestion des paiements.
-* Accès aux statistiques.
-* Invitation d'un comptable.
+* gérer leur activité ;
+* suivre leurs clients ;
+* créer leurs devis et factures ;
+* collaborer avec leurs équipes ;
+* donner un accès sécurisé à leurs clients et comptables ;
+* conserver la maîtrise de leurs données.
 
 ---
 
-## 👷 Collaborateur
+# ✨ Fonctionnalités principales
 
-Membre de l'entreprise.
+## 📄 Gestion commerciale
 
-Permissions configurables :
+### Devis
 
-* Création de devis.
-* Gestion des clients.
-* Création de factures.
-* Consultation des documents.
-* Accès limité aux informations financières.
-
----
-
-## 📊 Comptable
-
-Utilisateur externe ayant accès aux données comptables.
-
-Permissions :
-
-* Consultation des factures.
-* Export comptable.
-* Consultation des paiements.
-* Téléchargement des documents.
-* Suivi de la TVA.
-
-Restrictions :
-
-* Pas de suppression de documents.
-* Pas d'accès aux paramètres de l'entreprise.
-* Pas de gestion des utilisateurs.
-
----
-
-## 👤 Client
-
-Client final de l'entreprise.
-
-Permissions :
-
-* Consultation des devis.
-* Acceptation ou refus des devis.
-* Téléchargement des factures.
-* Consultation de l'historique.
-* Paiement en ligne (future fonctionnalité).
-
----
-
-# 🧩 Fonctionnalités principales
-
-## Gestion des entreprises
-
-* Création d'une entreprise.
-* Informations légales.
-* Coordonnées.
-* Paramètres de facturation.
-* Logo et personnalisation des documents.
-
----
-
-## Gestion des utilisateurs
-
-* Invitation d'utilisateurs.
-* Gestion des rôles.
-* Gestion des permissions.
-* Historique des actions.
-
----
-
-## Gestion des clients
-
-* Création de fiches clients.
-* Historique des échanges.
-* Historique des devis.
-* Historique des factures.
-
----
-
-## Gestion des prestations
-
-Catalogue permettant de créer :
-
-* Produits.
-* Services.
-* Tarifs.
-* TVA associée.
-
----
-
-# 📄 Devis
-
-Fonctionnalités :
-
-* Création rapide.
-* Ajout de prestations.
-* Calcul automatique.
+* Création de devis professionnels.
+* Calcul automatique des montants.
 * Gestion de la TVA.
 * Génération PDF.
-* Envoi par e-mail.
-* Acceptation par le client.
+* Envoi au client.
+* Acceptation ou refus en ligne.
+* Historique des modifications.
 
 Statuts :
 
@@ -166,16 +61,15 @@ EXPIRE
 
 ---
 
-# 🧾 Factures
-
-Fonctionnalités :
+### Factures
 
 * Création depuis un devis.
 * Numérotation automatique.
 * Génération PDF.
-* Suivi des paiements.
+* Suivi des règlements.
 * Gestion des échéances.
 * Gestion des avoirs.
+* Historique complet.
 
 Statuts :
 
@@ -191,50 +85,155 @@ ANNULEE
 
 ---
 
-# 💶 Paiements
+# 👥 Gestion des utilisateurs
 
-Gestion :
+GestiPro possède un système complet de rôles et permissions.
 
-* Paiement reçu.
-* Date de paiement.
-* Moyen de paiement.
-* Montant.
-* Historique.
+## 👑 Administrateur système
+
+Administrateur de l'installation GestiPro.
+
+Permissions :
+
+* Configuration globale.
+* Gestion des modules.
+* Gestion des mises à jour.
+* Gestion technique.
+* Surveillance système.
 
 ---
 
-# 📊 Tableau de bord
+## 🏢 Administrateur entreprise
 
-Informations principales :
+Responsable de l'entreprise.
 
-* Chiffre d'affaires.
-* Factures en attente.
-* Paiements reçus.
-* Devis en attente.
-* Évolution mensuelle.
-* Clients principaux.
+Permissions :
+
+* Gestion de l'entreprise.
+* Gestion des utilisateurs.
+* Gestion des clients.
+* Gestion des documents.
+* Paramétrage de la facturation.
+
+---
+
+## 👷 Collaborateur
+
+Membre de l'entreprise.
+
+Permissions personnalisables :
+
+* Création de devis.
+* Gestion des clients.
+* Création de factures.
+* Consultation des documents.
+
+---
+
+## 📊 Comptable
+
+Accès dédié aux professionnels de la comptabilité.
+
+Permissions :
+
+* Consultation des factures.
+* Export comptable.
+* Consultation des paiements.
+* Accès aux documents nécessaires.
+
+Restrictions :
+
+* Pas de suppression.
+* Pas de modification des paramètres entreprise.
+
+---
+
+## 👤 Client
+
+Espace client sécurisé.
+
+Fonctionnalités :
+
+* Consultation des devis.
+* Acceptation électronique.
+* Téléchargement des factures.
+* Consultation des documents.
+* Suivi des paiements.
+
+---
+
+# 🌐 Intégration aux sites internet
+
+GestiPro est conçu pour fonctionner avec les sites professionnels existants.
+
+Exemple :
+
+Site public :
+
+```
+https://www.exemple.fr
+```
+
+Espace gestion :
+
+```
+https://gestipro.exemple.fr
+```
+
+Les clients peuvent :
+
+* demander un devis ;
+* suivre leur dossier ;
+* récupérer leurs documents ;
+* communiquer avec l'entreprise.
+
+---
+
+# 🎨 Personnalisation
+
+Chaque installation peut être adaptée à l'entreprise.
+
+Personnalisation :
+
+* Logo.
+* Couleurs.
+* Nom de l'entreprise.
+* Modèles de documents.
+* Mentions légales.
+* Domaine personnalisé.
+
+Exemple :
+
+```
+GestiPro
+
+SARL Stéphane Auvé BTP
+```
 
 ---
 
 # 🔐 Sécurité
 
-Le projet devra intégrer :
+GestiPro intègre :
 
 * Authentification sécurisée.
-* Hashage des mots de passe.
-* Gestion des permissions.
+* Gestion fine des permissions.
 * Protection CSRF.
+* Hashage des mots de passe.
 * Journalisation des actions.
-* Isolation des données entre entreprises.
+* Isolation des données.
+* Sauvegardes.
+
+Chaque entreprise possède un environnement indépendant.
 
 ---
 
 # 🇫🇷 Conformité française
 
-Prévoir :
+GestiPro est conçu pour respecter les besoins des entreprises françaises :
 
-* Mentions obligatoires sur les factures.
-* Numérotation conforme.
+* Mentions obligatoires des documents.
+* Numérotation des factures.
 * Gestion TVA.
 * Gestion des avoirs.
 * Conservation des documents.
@@ -242,92 +241,182 @@ Prévoir :
 
 ---
 
-# 🏗️ Architecture technique envisagée
+# 🏗️ Architecture technique
 
 ## Backend
 
 * Symfony 7
+* PHP 8.3+
 * Doctrine ORM
 * PostgreSQL / MySQL
 * Symfony Security
-* Symfony Mailer
 * Symfony Messenger
 
 ## Frontend
 
 * Twig
-* Bootstrap ou Tailwind CSS
 * JavaScript
+* Bootstrap / Tailwind CSS
 
-## Génération documentaire
+## Documents
 
-* Génération PDF des devis et factures.
+* Génération PDF.
 * Modèles personnalisables.
+* Archivage documentaire.
 
 ---
 
-# 🗃️ Entités principales
+# 🧩 Architecture modulaire
+
+GestiPro est conçu avec une approche par modules.
+
+```
+GestiPro
+
+├── Core
+│   ├── Utilisateurs
+│   ├── Permissions
+│   └── Configuration
+│
+├── CRM
+│   ├── Clients
+│   └── Contacts
+│
+├── Commercial
+│   ├── Devis
+│   └── Factures
+│
+├── Paiements
+│
+├── Documents
+│
+├── Comptabilité
+│
+├── Portail Client
+│
+└── API
+```
+
+---
+
+# 🗃️ Principales entités
 
 ```
 User
- |
- |--- Role
- |
+
 Company
- |
- |--- Customer
- |
- |--- Quote
- |
- |--- Invoice
- |
- |--- Payment
- |
- |--- Product
- |
- |--- Document
- |
- |--- ActivityLog
+
+Role
+
+Permission
+
+Customer
+
+Contact
+
+Product
+
+Quote
+
+Invoice
+
+Payment
+
+Document
+
+ActivityLog
+
+Configuration
 ```
 
 ---
 
-# 🚀 Roadmap
+# 🚀 Installation
 
-## Version 1 - MVP
+Exemple :
+
+```bash
+git clone https://github.com/gestipro/gestipro.git
+
+composer install
+
+php bin/console doctrine:migrations:migrate
+
+symfony server:start
+```
+
+---
+
+# 🔄 Système de mises à jour
+
+Chaque installation peut recevoir :
+
+* mises à jour du cœur ;
+* nouveaux modules ;
+* correctifs de sécurité ;
+* évolutions réglementaires.
+
+---
+
+# 🛣️ Roadmap
+
+## Version 1.0
 
 * Authentification.
-* Création entreprise.
-* Gestion clients.
-* Création devis.
-* Génération PDF.
-* Création factures.
-* Suivi des paiements.
+* Gestion entreprise.
+* Gestion utilisateurs.
+* Clients.
+* Devis.
+* Factures.
+* PDF.
+* Permissions.
 
-## Version 2
+## Version 1.5
 
-* Espace client.
+* Portail client.
 * Espace comptable.
-* Invitations utilisateurs.
-* Permissions avancées.
-* Historique des actions.
+* Journal d'activité.
+* Personnalisation avancée.
 
-## Version 3
+## Version 2.0
 
 * Facturation électronique.
 * Signature électronique.
-* Paiement en ligne.
-* API.
-* Application mobile.
+* API publique.
+* Marketplace de modules.
+* Applications mobiles.
 
 ---
 
-# 💡 Vision
+# 🤝 Philosophie Open Source
 
-GestiPro n'est pas seulement un outil de facturation.
+GestiPro est construit autour de principes simples :
 
-C'est un assistant de gestion permettant aux professionnels de piloter leur activité simplement, avec tous leurs documents et collaborateurs réunis au même endroit.
+* Les données appartiennent aux entreprises.
+* Le logiciel doit rester transparent.
+* Les professionnels doivent pouvoir choisir leur hébergement.
+* La simplicité doit primer sur la complexité.
 
 ---
 
-**GestiPro — Votre activité, simplement maîtrisée.**
+# 📜 Licence
+
+À définir.
+
+---
+
+# 📬 Contribution
+
+Les contributions sont les bienvenues :
+
+* Développement.
+* Documentation.
+* Traductions.
+* Suggestions.
+* Tests.
+
+---
+
+# GestiPro
+
+**Votre entreprise. Vos données. Votre outil.**
