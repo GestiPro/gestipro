@@ -2,7 +2,7 @@
 
 > **La plateforme open-source de gestion pour les professionnels**
 
-![GestiPro Logo]([docs/assets/logo.png](https://github.com/GestiPro/gestipro/blob/main/logo.png?raw=true))
+![GestiPro Logo]([logo.png](logo.png))
 
 GestiPro est une solution open-source de gestion d'entreprise conçue pour les artisans, indépendants et petites structures.
 
