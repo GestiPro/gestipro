@@ -207,7 +207,7 @@ Exemple :
 ```
 GestiPro
 
-SARL Stéphane Auvé BTP
+SARL Jean Dupont BTP
 ```
 
 ---
