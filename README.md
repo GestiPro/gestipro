@@ -13,7 +13,7 @@ Chaque entreprise dispose de son propre espace professionnel accessible depuis s
 Exemple :
 
 ```
-https://gestipro.stephaneauve.fr
+https://gestipro.exemple.fr
 ```
 
 L'entreprise conserve ainsi son identité, ses données et son environnement de travail.
